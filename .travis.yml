@@ -4,3 +4,4 @@ addons:
   apt:
     packages:
       - cmake
+      - libboost-all-dev

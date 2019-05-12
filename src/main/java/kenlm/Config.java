@@ -1,7 +1,5 @@
 package kenlm;
 
-import sun.misc.Cleaner;
-
 import static kenlm.KenlmJNI.*;
 
 
