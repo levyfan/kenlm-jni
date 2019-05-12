@@ -1,0 +1,6 @@
+dist: xenial
+language: java
+addons:
+  apt:
+    packages:
+      - cmake
