@@ -1,5 +1,7 @@
 # kenlm-jni
 
+[![Build Status](https://travis-ci.org/levyfan/kenlm-jni.svg?branch=master)](https://travis-ci.org/levyfan/kenlm-jni)
+
 Java JNI wrapper for [kenlm](https://github.com/kpu/kenlm).
 
 ## Installation
