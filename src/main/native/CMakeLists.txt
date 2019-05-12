@@ -17,6 +17,10 @@ set(kenlm_INCLUDE_DIRS ${CMAKE_CURRENT_BINARY_DIR}/kenlm/src/kenlm)
 ExternalProject_Add(kenlm
     PREFIX kenlm
     GIT_REPOSITORY https://github.com/kpu/kenlm.git
+    INSTALL_COMMAND ""
+    CMAKE_CACHE_ARGS
+        -DCMAKE_POSITION_INDEPENDENT_CODE:BOOL=ON
+        -DCMAKE_BUILD_TYPE:STRING=Release
 )
 
 add_library(kenlm_jni SHARED kenlm_KenlmJNI.cpp)

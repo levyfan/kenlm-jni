@@ -1,0 +1,10 @@
+dist: trusty
+language: java
+addons:
+  apt:
+    packages:
+      - cmake
+      - libboost-all-dev
+jdk:
+  - oraclejdk8
+  - oraclejdk11

@@ -17,6 +17,7 @@ mvn clean install
 ```java
 Model model = new Model("test.arpa", new Config());
 System.out.println(model.score("this is a sentence .", true, true));
+model.close();
 ```
 
 See [ModelTest](src/test/java/kenlm/ModelTest.java) for more, including stateful APIs.
