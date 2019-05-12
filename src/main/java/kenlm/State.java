@@ -13,11 +13,9 @@ public class State implements Comparable<State> {
 
     private long _c_state;
 
-    private final Cleaner cleaner;
-
     public State() {
         this._c_state = StateNew();
-        this.cleaner = Cleaner.create(this, new Deallocator(_c_state));
+        CleanerUtil.createAndRegister(this, new Deallocator(_c_state));
     }
 
     @Override

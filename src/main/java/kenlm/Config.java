@@ -11,11 +11,9 @@ public class Config {
 
     private final long _c_config;
 
-    private final Cleaner cleaner;
-
     public Config() {
         this._c_config = ConfigNew();
-        this.cleaner = Cleaner.create(this, new Deallocator(_c_config));
+        CleanerUtil.createAndRegister(this, new Deallocator(_c_config));
     }
 
     public LoadMethod getLoadMethod() {
